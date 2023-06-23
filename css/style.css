@@ -94,10 +94,7 @@ body {
 .section__main .container {
     display: flex;
     gap: 30px;
-}
-
-.main__amelia {
-    padding-top: 178px;
+    align-items: center;
 }
 
 h1 {
@@ -146,6 +143,18 @@ h1 {
     margin-bottom: 60px;
     text-transform: uppercase;
     text-align: center;
+    position: relative;
+}
+
+.main__about h2::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #161616;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main__about p {
@@ -178,15 +187,24 @@ h1 {
     display: flex;
     flex-flow: row-reverse;
     gap: 30px;
-}
-
-.main__working {
-    margin-top: 188px;
+    align-items: center;
 }
 
 .main__working h2 {
     margin-bottom: 60px;
     text-align: center;
+    position: relative;
+}
+
+.main__working h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #161616;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .section__work {
@@ -201,6 +219,18 @@ h1 {
 .section__work h2 {
     margin-bottom: 80px;
     text-align: center;
+    position: relative;
+}
+
+.section__work h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: #161616;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .main__work-cards__card {
@@ -241,9 +271,9 @@ h1 {
 }
 
 .footer__logo-text {
-    margin-top: 210px;
     font-weight: 500;
     font-size: 16px;
+    text-align: center;
 }
 
 .footer__net {
