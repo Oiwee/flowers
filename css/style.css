@@ -284,3 +284,10 @@ h1 {
     margin-bottom: 40px;
 }
 
+.footer__net a {
+    margin-right: 15px;
+}
+
+.footer__net a:last-child {
+    margin: 0;
+}
